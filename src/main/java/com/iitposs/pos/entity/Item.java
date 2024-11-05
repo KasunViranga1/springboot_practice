@@ -32,6 +32,16 @@ public class Item {
     @Column(name = "display_price", nullable = false)
     private double displayPrice;
 
+    public Item(String itemName, MeasuringType measuringType, double supplierPrice, double displayPrice, double sellingPrice, int qtyOnHand, boolean activeState) {
+        this.itemName = itemName;
+        this.measuringType = measuringType;
+        this.supplierPrice = supplierPrice;
+        this.displayPrice = displayPrice;
+        this.sellingPrice = sellingPrice;
+        this.qtyOnHand = qtyOnHand;
+        this.activeState = activeState;
+    }
+
     @Column(name = "selling_price", nullable = false)
     private double sellingPrice;
 
@@ -40,4 +50,6 @@ public class Item {
 
     @Column(name = "active_state", nullable = false)
     private boolean activeState;
+
+
 }

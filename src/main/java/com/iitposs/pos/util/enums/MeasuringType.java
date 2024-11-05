@@ -1,5 +1,5 @@
 package com.iitposs.pos.util.enums;
 
 public enum MeasuringType {
-    KILO_GRAM, GRAM, LITER, MILI_LITER, NUMBERS
+    KILO_GRAM, GRAM, LITER, MILLI_LITER, NUMBERS
 }
